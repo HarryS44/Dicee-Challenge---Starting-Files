@@ -1,35 +1,44 @@
-let randomNumber1 = Math.floor(Math.random() * 7);
+const randomNumber1 = Math.floor(Math.random() * 7);
 
+function changeDiceImage() {
+    
 
-if (randomNumber1 === 1) {
-    document.querySelector("img.img1").setAttribute("src", "./images/dice1.png");
-} else if (randomNumber1 === 2) {
-    document.querySelector("img.img1").setAttribute("src", "./images/dice2.png");
-}  else if (randomNumber1 === 3) {
-    document.querySelector("img.img1").setAttribute("src", "./images/dice3.png");
-}  else if (randomNumber1 === 4) {
-    document.querySelector("img.img1").setAttribute("src", "./images/dice4.png");
-}  else if (randomNumber1 === 5) {
-    document.querySelector("img.img1").setAttribute("src", "./images/dice5.png");
-} else if (randomNumber1 === 6) {
-    document.querySelector("img.img1").setAttribute("src", "./images/dice6.png");
+    const imagePaths = {
+        1: "./images/dice1.png",
+        2: "./images/dice2.png",
+        3: "./images/dice3.png",
+        4: "./images/dice4.png",
+        5: "./images/dice5.png",
+        6: "./images/dice6.png"
+    };
+
+    const imagePath = imagePaths[randomNumber1];
+
+    document.querySelector("img.img1").setAttribute("src", imagePath);
 }
 
-let randomNumber2 = Math.floor(Math.random() * 7);
+changeDiceImage()
 
-if (randomNumber2 === 1) {
-    document.querySelector("img.img2").setAttribute("src", "./images/dice1.png");
-} else if (randomNumber2 === 2) {
-    document.querySelector("img.img2").setAttribute("src", "./images/dice2.png");
-}  else if (randomNumber2 === 3) {
-    document.querySelector("img.img2").setAttribute("src", "./images/dice3.png");
-}  else if (randomNumber2 === 4) {
-    document.querySelector("img.img2").setAttribute("src", "./images/dice4.png");
-}  else if (randomNumber2 === 5) {
-    document.querySelector("img.img2").setAttribute("src", "./images/dice5.png");
-} else if (randomNumber2 === 6) {
-    document.querySelector("img.img2").setAttribute("src", "./images/dice6.png");
+const randomNumber2 = Math.floor(Math.random() * 7);
+
+function changeDiceImage2() {
+    
+
+    const imagePaths = {
+        1: "./images/dice1.png",
+        2: "./images/dice2.png",
+        3: "./images/dice3.png",
+        4: "./images/dice4.png",
+        5: "./images/dice5.png",
+        6: "./images/dice6.png"
+    };
+
+    const imagePath = imagePaths[randomNumber2];
+
+    document.querySelector("img.img2").setAttribute("src", imagePath);
 }
+
+changeDiceImage2()
 
 if (randomNumber1 > randomNumber2) {
     document.querySelector("h1").innerHTML = "Player 1 wins!";

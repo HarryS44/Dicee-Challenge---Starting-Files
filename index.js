@@ -1,4 +1,4 @@
-const randomNumber1 = Math.floor(Math.random() * 7);
+const randomNumber1 = Math.floor(Math.random() * 6) + 1;
 
 function changeDiceImage() {
     
@@ -19,7 +19,7 @@ function changeDiceImage() {
 
 changeDiceImage()
 
-const randomNumber2 = Math.floor(Math.random() * 7);
+const randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
 function changeDiceImage2() {
     
